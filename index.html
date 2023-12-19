@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h1>Hello 👋</h1> -->
+    <div class="nav">
+      <h1>Library</h1>
+      <button id="modalBtn">New Book</button>
+    </div>
+    <div>
+      <form action="" class="modal remove">
+        <img src="./assets/close.svg" alt="close" class="closeform" />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title"
+          class="inp"
+        />
+        <input
+          type="text"
+          name="author"
+          id="author"
+          placeholder="Author"
+          class="inp"
+        />
+        <input type="number" name="pages" id="pages" class="inp" />
+        <div>
+          <label for="markAsRead">Mark as read</label>
+          <input type="checkbox" name="tbr" id="markAsRead" />
+        </div>
+
+        <button type="submit" class="addBtn">Add</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <table id="lib">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Mark as read</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+        <!-- <tr>
+          <td>1</td>
+          <td>Dune</td>
+          <td>Frank Herbert</td>
+          <td>296</td>
+          <td><button type="toggle">but</button></td>
+          <td>icon</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Dune 2</td>
+          <td>Frank Herbert</td>
+          <td>296</td>
+          <td><button type="toggle">but</button></td>
+          <td>icon</td>
+        </tr> -->
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <div class="container">
+      <div class="bookSection">
+        <div class="card">
+          <p>Title</p>
+          <p>Author</p>
+          <p>Pages</p>
+          <p>TBR</p>
+          <button>Remove</button>
+        </div>
+        <div class="card"></div>
+      </div>
+      <button class="newEntry">New book</button>
+    </div> -->
+<!-- <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+        </tr> -->
